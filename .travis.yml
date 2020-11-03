@@ -3,15 +3,14 @@ language: java
 script:
 - cd ./simple-api
 - mvn clean verify
-- docker login $DOCKER_LOGIN $DOCKER_PASSWORD
-#- docker push correction-tp1-master/database
-#- docker push correction-tp1-master/database
-#- docker push correction-tp1-master/database
-# build
-# publication des images
+- docker login -u $DOCKER_LOGIN -p $DOCKER_PASSWORD
+- docker build -t paulinemaitre/database database
+- docker build -t paulinemaitre/simple-api simple-api
+- docker build -t paulinemaitre/httpd httpd
+- docker push paulinemaitre/database
+- docker push paulinemaitre/database
+- docker push paulinemaitre/httpd
 
-cache :
-directories :
-  - $HOME/.m2
-services :
-  - docker
+cache:
+  directories:
+    - $HOME/.m2

@@ -8,7 +8,7 @@ script:
 - docker build -t paulinemaitre/devops:simple-api simple-api
 - docker build -t paulinemaitre/devops:httpd httpd
 - docker push paulinemaitre/devops:database
-- docker push paulinemaitre/devops:database
+- docker push paulinemaitre/devops:simple-api
 - docker push paulinemaitre/devops:httpd
 
 cache:

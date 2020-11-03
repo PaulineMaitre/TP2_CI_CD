@@ -17,6 +17,6 @@ cache:
     - $HOME/.m2
 
 addons :
-sonarcloud :
-organization : "devops-epf-ci-cd"
-token : "$SONARCLOUD_TOKEN"
+  sonarcloud :
+    organization : "devops-epf-ci-cd"
+    token : "$SONARCLOUD_TOKEN"

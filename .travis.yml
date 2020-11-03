@@ -2,7 +2,7 @@ language: java
 
 script:
 - cd ./simple-api/
-- mvn clean verify org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=devops-epf-ci-cd
+- mvn clean verify org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=devops-2020-ci-cd
 - cd ..
 - docker login -u $DOCKER_LOGIN -p $DOCKER_PASSWORD
 - docker build -t paulinemaitre/devops:database database
@@ -18,5 +18,5 @@ cache:
 
 addons :
 sonarcloud :
-organization : "devops-2020-ci-cd"
+organization : "devops-epf-ci-cd"
 token : "$SONARCLOUD_TOKEN"

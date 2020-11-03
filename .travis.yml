@@ -2,4 +2,4 @@ language: java
 
 script:
 - cd ./simple-api
-- mnv clean verify
+- mvn clean verify

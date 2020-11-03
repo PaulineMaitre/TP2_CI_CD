@@ -16,5 +16,5 @@ cache:
 
 addons :
 sonarcloud :
-organization : "devops-epf-ci-cd"
+organization : "devops-2020-ci-cd"
 token : "$SONARCLOUD_TOKEN"

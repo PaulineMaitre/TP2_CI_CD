@@ -7,9 +7,9 @@ script:
 - docker build -t paulinemaitre/database database
 - docker build -t paulinemaitre/simple-api simple-api
 - docker build -t paulinemaitre/httpd httpd
-- docker push paulinemaitre/database
-- docker push paulinemaitre/database
-- docker push paulinemaitre/httpd
+- docker push paulinemaitre/devops:database
+- docker push paulinemaitre/devops:database
+- docker push paulinemaitre/devops:httpd
 
 cache:
   directories:

@@ -4,9 +4,9 @@ script:
 - cd ./simple-api
 - mvn clean verify
 - docker login -u $DOCKER_LOGIN -p $DOCKER_PASSWORD
-- docker build -t paulinemaitre/database database
-- docker build -t paulinemaitre/simple-api simple-api
-- docker build -t paulinemaitre/httpd httpd
+- docker build -t paulinemaitre/devops:database database
+- docker build -t paulinemaitre/devops:simple-api simple-api
+- docker build -t paulinemaitre/devops:httpd httpd
 - docker push paulinemaitre/devops:database
 - docker push paulinemaitre/devops:database
 - docker push paulinemaitre/devops:httpd

@@ -3,10 +3,9 @@
   become: yes
 
   roles:
-    - Install yum-utils
-    - Install device-mapper-persistent-data
-    - Install lvm2
-    - Add Docker stable repository
-    - Install Docker
-    - Make sure Docker is running
+    - docker
+    - network
+    - database
+    - app
+    - proxy
 

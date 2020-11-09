@@ -5,12 +5,12 @@ script:
 - mvn clean verify org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=devops-2020-ci-cd
 - cd ..
 - docker login -u $DOCKER_LOGIN -p $DOCKER_PASSWORD
-- docker build -t paulinemaitre/devops:database database
-- docker build -t paulinemaitre/devops:simple-api simple-api
-- docker build -t paulinemaitre/devops:httpd httpd
-- docker push paulinemaitre/devops:database
-- docker push paulinemaitre/devops:simple-api
-- docker push paulinemaitre/devops:httpd
+- docker build -t $DOCKER_LOGIN/devops:database database
+- docker build -t $DOCKER_LOGIN/devops:simple-api simple-api
+- docker build -t $DOCKER_LOGIN/devops:httpd httpd
+- docker push $DOCKER_LOGIN/devops:database
+- docker push $DOCKER_LOGIN/devops:simple-api
+- docker push $DOCKER_LOGIN/devops:httpd
 
 cache:
   directories:

@@ -1,5 +1,5 @@
 - name: Launch database
-  docker container:
+  docker_container:
     name: database
     image: paulinemaitre/devops:database
     state: present

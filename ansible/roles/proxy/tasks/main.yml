@@ -1,3 +1,4 @@
 - name: Launch proxy
   docker_container:
     name: reverse_proxy
+    image: paulinemaitre/devops:httpd

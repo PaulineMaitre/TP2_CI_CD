@@ -1,6 +1,7 @@
 - name: Launch app
   docker_container:
     name: backend
+    image: paulinemaitre/devops:simple-api
     networks:
       - name: app-network
 

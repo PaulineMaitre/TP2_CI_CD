@@ -1,8 +1,6 @@
 - name: Launch app
-  docker_network:
+  docker_container:
     name: backend
     networks:
       - name: app-network
-    database:
-      - name: database
 

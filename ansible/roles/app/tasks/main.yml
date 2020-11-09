@@ -5,6 +5,8 @@
     state: started
     networks:
       - name: app-network
+        links:
+          - database
     env:
       SPRING_DATASOURCE_USERNAME=usr
       SPRING_DATASOURCE_PASSWORD=pwd

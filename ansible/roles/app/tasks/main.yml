@@ -2,4 +2,7 @@
   docker_network:
     name: backend
     networks:
-      - name: "{{app-network}}"
+      - name: app-network
+    database:
+      - name: database
+

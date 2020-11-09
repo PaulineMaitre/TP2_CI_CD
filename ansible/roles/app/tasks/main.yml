@@ -2,6 +2,11 @@
   docker_container:
     name: backend
     image: paulinemaitre/devops:simple-api
+    state: present
     networks:
       - name: app-network
+    env:
+      SPRING_DATASOURCE_USERNAME
+      SPRING_DATASOURCE_PASSWORD
+      SPRING_DATASOURCE_URL
 

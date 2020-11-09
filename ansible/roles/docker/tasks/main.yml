@@ -1,9 +1,9 @@
 ---
 # tasks file for roles/docker
 - name: Install yum-utils
-    yum:
-      name: yum-utils
-      state: latest
+  yum:
+    name: yum-utils
+    state: latest
 
 - name: Install device-mapper-persistent-data
   yum:

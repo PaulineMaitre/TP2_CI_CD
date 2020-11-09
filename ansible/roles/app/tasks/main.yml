@@ -1,0 +1,5 @@
+- name: Launch app
+  docker_network:
+    name: backend
+    networks:
+      - name: "{{app-network}}"

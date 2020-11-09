@@ -4,7 +4,7 @@
     image: paulinemaitre/devops:database
     state: present
     networks:
-      - name: "{{app-network}}"
+      - name: app-network
     env:
       POSTGRES_PASSWORD=pwd
       POSTGRES_USER=usr

@@ -2,9 +2,9 @@
   docker_container:
     name: reverse_proxy
     image: paulinemaitre/devops:httpd
-    state: started
     ports:
       - 80:80
     networks:
       - name: app-network
-    pull: true
+    pull: yes
+    recreate: yes

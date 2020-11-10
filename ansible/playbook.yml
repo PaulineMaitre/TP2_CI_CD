@@ -3,10 +3,10 @@
   become: yes
 
   roles:
-    #- docker
+    - docker
     - network
     - database
     - app
     - proxy
-    #- front
+    - front
 

@@ -1,14 +1,10 @@
-- name: Launch app
+- name: Launch front
   docker_container:
-    name: backend
-    image: paulinemaitre/devops:simple-api
+    name: front
+    image: paulinemaitre/devops:front
     state: started
     networks:
       - name: app-network
-        links:
-          - database
-    env:
-      SPRING_DATASOURCE_USERNAME=usr
-      SPRING_DATASOURCE_PASSWORD=pwd
-      SPRING_DATASOURCE_URL=jdbc:postgresql://database:5432/db
+        #links:
+          #- database
 

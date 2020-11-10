@@ -8,9 +8,11 @@ script:
 - docker build -t $DOCKER_LOGIN/devops:database database
 - docker build -t $DOCKER_LOGIN/devops:simple-api simple-api
 - docker build -t $DOCKER_LOGIN/devops:httpd httpd
+- docker build -t $DOCKER_LOGIN/devops:front front
 - docker push $DOCKER_LOGIN/devops:database
 - docker push $DOCKER_LOGIN/devops:simple-api
 - docker push $DOCKER_LOGIN/devops:httpd
+- docker push $DOCKER_LOGIN/devops:front
 
 cache:
   directories:

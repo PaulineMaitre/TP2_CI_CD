@@ -7,5 +7,5 @@
       #- 80:80
     networks:
       - name: app-network
-    pull: true
+    pull: yes
 

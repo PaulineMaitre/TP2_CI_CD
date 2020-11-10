@@ -8,5 +8,5 @@
     - database
     - app
     - proxy
-    - front
+    #- front
 

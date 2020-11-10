@@ -10,6 +10,3 @@
       POSTGRES_USER=usr
       POSTGRES_DB=db
     pull: yes
-    volumes:
-      - my_db_volume:
-          driver: local

@@ -4,6 +4,6 @@
     image: paulinemaitre/devops:httpd
     state: started
     ports:
-      - 80:80
+      - 8080:8080
     networks:
       - name: app-network

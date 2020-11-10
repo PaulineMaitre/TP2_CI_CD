@@ -3,6 +3,8 @@
     name: front
     image: paulinemaitre/devops:front
     state: started
+    ports:
+      - 80:80
     networks:
       - name: app-network
         #links:

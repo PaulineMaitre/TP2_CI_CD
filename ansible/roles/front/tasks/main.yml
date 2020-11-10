@@ -9,4 +9,6 @@
       - name: app-network
         #links:
           #- database
+    env:
+      UE_APP_API_URL=localhost:8080
 

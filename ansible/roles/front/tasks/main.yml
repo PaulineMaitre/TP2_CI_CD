@@ -5,8 +5,6 @@
     state: started
     networks:
       - name: app-network
-        #links:
-          #- database
     env:
-      UE_APP_API_URL=localhost:8080
+      VUE_APP_API_URL=pauline.maitre.takima.cloud:80/backend
 

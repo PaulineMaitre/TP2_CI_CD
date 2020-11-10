@@ -22,8 +22,7 @@ services:
     build: ./httpd
     ports:
       #- "8080:8080"
-      #- "80:80"
-      - "8080:80"
+      - "80:80"
     networks:
       - app-network
 

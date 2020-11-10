@@ -11,4 +11,5 @@
       SPRING_DATASOURCE_USERNAME=usr
       SPRING_DATASOURCE_PASSWORD=pwd
       SPRING_DATASOURCE_URL=jdbc:postgresql://database:5432/db
+    pull: true
 

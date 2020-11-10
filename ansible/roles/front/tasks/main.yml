@@ -3,10 +3,9 @@
     name: front
     image: paulinemaitre/devops:front
     state: started
-    ports:
-      - 80:80
+    #ports:
+      #- 80:80
     networks:
       - name: app-network
-    env:
-      VUE_APP_API_URL=pauline.maitre.takima.cloud:80/backend
+    pull: true
 
